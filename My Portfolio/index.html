@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+        <nav class="navBar">
+            <h1>Michael Ademola Portfolio</h1>
+            <div class="navigationMenu">
+                <a href="#aboutMe">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contactForm">Let's Connect</a>
+            </div>
+        </nav>
+        <section class="heroSection">
+            <img class="profileImage" src="/media/profile.JPG">
+            <div class="herosectionDetails">
+                <h1>Michael Ademola</h1>
+                <h3>Front-Developer</h3>
+            </div>
+        </section>
+        <section class="aboutMe" id="aboutMe">
+            <h1>What I Do...</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum doloribus perspiciatis vero quasi dolorum placeat odit. Cumque aspernatur maiores atque, omnis officia expedita!</p>
+        </section>
+        <section class="skillsAndProjects">
+            <div class="skills" id="skills">
+                <h1 class="cardHeading">Skills</h1>
+                <img title="HTML" src="/media/html-1.svg">
+                <img title="CSS" src="/media/css-3.svg">
+                <img title="Javascript" src="/media/logo-javascript.svg">
+                <img title="Node.JS" src="/media/nodejs-1.svg">
+                <img title="React" src="/media/react-1.svg">
+                <img title="MongoDB" src="/media/mongodb-icon-1.svg">
+                <img title="Firebase" src="/media/firebase-2.svg">
+                <img title="Docker" src="/media/docker-3.svg">
+            </div>
+            <div class="projects" id="projects">
+                <h1 class="cardHeading">Projects</h1>
+                <div class="projectContainer">
+                    <img src="/media/css-3.svg">
+                    <div class="projectDescription">
+                        <h4>Project Name</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contactForm" id="contactForm">
+            <h1>Let's Connect!</h1>
+            <div class="formGroup">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Email">
+            </div>
+            <div class="formGroup">
+                <label for="message">Message</label>
+                <textarea placeholder="Send Message!" id="message" name="w3review" rows="4" cols="50"></textarea>
+            </div>
+            <button class="submitButton" onClick={submit()}>Connect</button>
+        </section>
+    </main>
+    <script src="Script.js"></script>
+</body>
+</html>
